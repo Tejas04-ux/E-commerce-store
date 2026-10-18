@@ -1,0 +1,14 @@
+# Copy to terraform.tfvars and edit. terraform.tfvars is git-ignored.
+aws_region    = "ap-south-1"
+project_name  = "shop"
+instance_type = "t3.micro"
+
+# Your public IP, e.g. from https://checkip.amazonaws.com  (leave [] to use only SSM Session Manager)
+ssh_cidr_blocks = ["203.0.113.10/32"]
+key_name        = "" # name of an existing EC2 key pair, if you want SSH
+
+# Open Grafana/Prometheus only to your IP
+monitoring_cidr_blocks = ["203.0.113.10/32"]
+
+# Get an email when the server is unhealthy
+alert_email = "you@example.com"
