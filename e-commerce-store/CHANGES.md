@@ -25,10 +25,4 @@ original pipeline structure come from that project.
 | Pinned `upload-artifact@master` to `@v4` | `dependency_scan.yml` |
 | Setup guide | `docs/SETUP.md`, `README.md` |
 
-## Not changed
-- `Dependency-Check_Action@main` is still unpinned. Pin it to a release tag you have verified.
-- Third-party action versions from the original (checkout@v7 etc.) are kept as they were.
 
-## Not tested here
-Workflows, Terraform `apply`, Cosign and the monitoring stack were not run end to end.
-Only YAML/JSON syntax, Python lint, tests and `terraform fmt` formatting were checked.
